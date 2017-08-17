@@ -357,6 +357,7 @@ Arvame ära Kristjani mõeldud arvu sündmuste tehteid kasutades!
 * Olgu sündmus $C = C1\cap C2$. Defineeri see `R`-is.
 * Kristjani mõeldud arvu saab esitada nüüd kui $Arv = (A \cap B) \cap C$. Täienda muutuja `Arv` funktsioonidega ning saad Kristjani arvu kätte!
 *** =hint
+Sündmuste tehete defineerimiseks on abiks eelmise harjutuses kasutatud käskude tabel.
 
 *** =pre_exercise_code
 ```{r}
