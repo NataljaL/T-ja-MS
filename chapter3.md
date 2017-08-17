@@ -323,7 +323,13 @@ B_taiend <- setdiff(Omega, B)
 
 *** =sct
 ```{r}
+test_object("X", undefined_msg = NULL, incorrect_msg = "Kas kasutasid `R`-i funktsiooni, mis vastab sündmuste ühendile?")
+test_object("Y", undefined_msg = NULL, incorrect_msg = "Kas kasutasid `R`-i funktsiooni, mis vastab sündmuste ühisosale?")
+test_object("Z1", undefined_msg = NULL, incorrect_msg = "Kas kasutasid funktsiooni `setdiff` ja esimeseks argumendiks panid `A`?")
+test_object("Z2", undefined_msg = NULL, incorrect_msg = "Kas kasutasid funktsiooni `setdiff` ja esimeseks argumendiks panid `B`?")
+test_object("B_taiend", undefined_msg = NULL, incorrect_msg = "Täiendi saamiseks kasuta funktsiooni `setdiff` koos esimese aergumendiga `Omega`")
 
+success_msg("Ja saidki sellega hakkama! Super!")
 ```
 
 
