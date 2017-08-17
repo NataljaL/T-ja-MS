@@ -20,7 +20,7 @@ Proovi järgmised näited läbi ja uuri, kuidas on võimalik sündmust defineeri
 
 
 *** =hint
-Kas vajutasid nuppu `Submit Answer`?
+
 
 *** =pre_exercise_code
 ```{r}
