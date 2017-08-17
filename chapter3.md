@@ -140,7 +140,7 @@ success_msg("Lahe! Suundu järgmise harjutuse juurde!")
 
 Olgu katseks nelja 6-tahulise täringu veeretamine. Huvipakkuvaks sündmuseks $A$ on kõik sellised realisatsioonid, kus silmade summa jagub 20-ga. Millega võrdub $|A|$ ehk sündmuse $A$ elementaarsündmuste arv?
 
-Abiks on tehe `a %% b`, mis leiab jäägi arvu `a` jagamisel arvuga `b`. 
+Abiks on tehe `a %% b`, mis leiab jäägi arvu `a` jagamisel arvuga `b`.  Harjuta jugelt aknas `R Console`!
 
 *** =instructions
 
