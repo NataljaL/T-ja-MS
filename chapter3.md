@@ -134,3 +134,72 @@ E2
 ```{r}
 success_msg("Lahe! Suundu järgmise harjutuse juurde!")
 ```
+
+--- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:b60b137d4b
+## Ülesanne. Neli täringut
+
+Olgu katseks nelja 6-tahulise täringu veeretamine. Huvipakkuvaks sündmuseks $A$ on kõik sellised realisatsioonid, kus silmade summa jagub 20-ga. Millega võrdub $|A|$ ehk sündmuse $A$ elementaarsündmuste arv?
+
+Abiks on tehe `a %% b`, mis leiab jäägi arvu `a` jagamisel arvuga `b`. 
+
+*** =instructions
+
+* 1292
+* 4
+* 35
+* minu vastust pole
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+source_github <- function(user = "cran", package = "prob") {
+  
+  library(httr)
+  package_source <- paste0(user, "/",package, "/")
+  url <- paste0("https://api.github.com/repos","/", package_source, "git/trees/master?recursive=1")
+  req <- GET(url)
+  stop_for_status(req)
+  filelist <- unlist(lapply(content(req)$tree, "[", "path"), use.names = F)
+  R_files <- filelist[grep("R/",filelist)]
+  
+  for(file in R_files) {
+    url <- paste0("https://raw.githubusercontent.com/", package_source, "master/", file)
+    source(url)
+  }
+}
+save(file = "source_github.Rda", source_github)
+
+source_github()
+
+source_github <- function(user = "cran", package = "combinat") {
+  
+  library(httr)
+  package_source <- paste0(user, "/",package, "/")
+  url <- paste0("https://api.github.com/repos","/", package_source, "git/trees/master?recursive=1")
+  req <- GET(url)
+  stop_for_status(req)
+  filelist <- unlist(lapply(content(req)$tree, "[", "path"), use.names = F)
+  R_files <- filelist[grep("R/",filelist)]
+  
+  for(file in R_files) {
+    url <- paste0("https://raw.githubusercontent.com/", package_source, "master/", file)
+    source(url)
+  }
+}
+save(file = "source_github.Rda", source_github)
+
+source_github()
+```
+
+*** =sct
+```{r}
+# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
+
+msg_bad <- "Kahjuks pole õige vastus."
+msg_success <- "Super!"
+test_mc(correct = 3, feedback_msgs = c(msg_bad,msg_bad,  msg_success,  msg_bad))
+```
+
+
+
