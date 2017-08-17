@@ -227,11 +227,7 @@ Sündmus $A$ on defineeritud kui kõik ärtu masti kaardid ja sündmus $B$ kui k
 5. Leida sündmus B_taiend, mis vastab tehtele $\bar B$.
 
 *** =hint
-Vihje 1
-Vihje 2
-Vihje 3
-Vihje 4
-Vihje 5
+Kasuta tabelis olevad funktsioonid ning argumentideks, `A`, `B` või `Omega`. 
 
 *** =pre_exercise_code
 ```{r}
