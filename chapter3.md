@@ -203,5 +203,128 @@ msg_success <- "Super! Said asjast õigesti aru!"
 test_mc(correct = 3, feedback_msgs = c(msg_bad,msg_bad,  msg_success,  msg_bad))
 ```
 
+--- type:NormalExercise lang:r xp:100 skills:1 key:7874b5a8d3
+## Sündmuste ühend, ühisosa, vahe, täiend
+
+Sündmuste tehete funktsioonid `R`-is on defineeritud järgmise tabeli abil:
+
+| `R`-i funktsioon    | Tehe         | Tähistus | Definitsioon                       |
+|---------------------|--------------|:--------:|------------------------------------|
+| `union(A, B)`       | Ühend        |$A \cup B$| $A$ või $B$ elemendid, või mõlemad     |
+| `intersect(A, B)`   | Ühisosa      |$A \cap B$| $A$ ja $B$ ühised elemendid           |
+| `setdiff(A, B)`     | Vahe         |$A\backslash B$    | elemendid $A$-st, mis ei kuulu $B$-sse   |
+
+Täiendi $\bar A$ saamiseks saab kasutada `setdiff(Omega, A)`, kus `Omega` on kõikide elementaarsündmuste hulk.
+
+*** =instructions
+Olgu $\Omega$: 36-st kaardist koosnev kaardipakk, milles on neli masti ja kaardid 6, 7, 8, 9, poiss, emand, kuningas ja äss.
+Sündmus $A$ on defineeritud kui kõik ärtu masti kaardid ja sündmus $B$ kui kaardid numbritega 7, 8 ja 9.
+
+1. Leida sündmus X, mis on sündmuste $A$ ja $B$ ühend.
+2. Leida sündmus Y, mis on sündmuste $A$ ja $B$ ühisosa.
+3. Leida sündmus Z1, mis vastab tehtele $A\backslash B$.
+4. Leida sündmus Z2, mis vastab tehtele $B\backslash A$. Kas Z1 ja Z2 langevad kokku? 
+5. Leida sündmus B_taiend, mis vastab tehtele $\bar B$.
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+source_github <- function(user = "cran", package = "prob") {
+  
+  library(httr)
+  package_source <- paste0(user, "/",package, "/")
+  url <- paste0("https://api.github.com/repos","/", package_source, "git/trees/master?recursive=1")
+  req <- GET(url)
+  stop_for_status(req)
+  filelist <- unlist(lapply(content(req)$tree, "[", "path"), use.names = F)
+  R_files <- filelist[grep("R/",filelist)]
+  
+  for(file in R_files) {
+    url <- paste0("https://raw.githubusercontent.com/", package_source, "master/", file)
+    source(url)
+  }
+}
+save(file = "source_github.Rda", source_github)
+
+source_github()
+
+source_github <- function(user = "cran", package = "combinat") {
+  
+  library(httr)
+  package_source <- paste0(user, "/",package, "/")
+  url <- paste0("https://api.github.com/repos","/", package_source, "git/trees/master?recursive=1")
+  req <- GET(url)
+  stop_for_status(req)
+  filelist <- unlist(lapply(content(req)$tree, "[", "path"), use.names = F)
+  R_files <- filelist[grep("R/",filelist)]
+  
+  for(file in R_files) {
+    url <- paste0("https://raw.githubusercontent.com/", package_source, "master/", file)
+    source(url)
+  }
+}
+save(file = "source_github.Rda", source_github)
+
+source_github()
+```
+
+*** =sample_code
+```{r}
+vaartused <- c( 6, 7, 8, 9, 10, "J", "Q", "K", "Ä")
+mastid <- c("poti", "ärtu", "risti", "ruutu")
+Omega <- expand.grid(vaartused, mastid)
+colnames(Omega) = c("Vaartus", "Mast") # täpitähed nimedes võivad tekitada veateateid
+
+A <- subset(Omega, Mast == "ärtu")
+B <- subset(Omega, Vaartus %in% 7:9)
+
+# Ülesanne 1. Sündmuste A ja B ühend:
+X <- ___________
+
+# Ülesanne 2. Sündmuste A ja B ühisosa:
+Y <- ___________
+
+# Ülesanne 3. Sündmsuste A ja B vahe:
+Z1 <- ___________ 
+
+# Ülesanne 4. Sündmsute B ja A vahe:
+Z2 <- ___________ 
+
+# Ülesanne 5. Sündmuse B täiend:
+B_taiend <- ___________ 
+```
+
+*** =solution
+```{r}
+vaartused <- c( 6, 7, 8, 9, 10, "J", "Q", "K", "Ä")
+mastid <- c("poti", "ärtu", "risti", "ruutu")
+Omega <- expand.grid(vaartused, mastid)
+colnames(Omega) = c("Vaartus", "Mast") # täpitähed nimedes võivad tekitada veateateid
+
+A <- subset(Omega, Mast == "ärtu")
+B <- subset(Omega, Vaartus %in% 7:9)
+
+# Ülesanne 1. Sündmuste A ja B ühend:
+X <- union(A, B)
+
+# Ülesanne 2. Sündmuste A ja B ühisosa:
+Y <- intersect(A, B)
+
+# Ülesanne 3. Sündmsuste A ja B vahe:
+Z1 <- setdiff(A, B) 
+
+# Ülesanne 4. Sündmsute B ja A vahe:
+Z2 <- setdiff(B, A) 
+
+# Ülesanne 5. Sündmuse B täiend:
+B_taiend <- setdiff(Omega, B) 
+```
+
+*** =sct
+```{r}
+
+```
+
 
 
