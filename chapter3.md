@@ -21,6 +21,8 @@ Proovi järgmised näited läbi ja uuri, kuidas on võimalik sündmust defineeri
 
 *** =hint
 
+Kas vajutasid nuppu `Submit Answer`?
+
 *** =pre_exercise_code
 ```{r}
 source_github <- function(user = "cran", package = "prob") {
@@ -130,5 +132,5 @@ E2
 
 *** =sct
 ```{r}
-
+success_msg("Lahe! Suundu järgmise harjutuse juurde!")
 ```
