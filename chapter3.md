@@ -447,7 +447,17 @@ Arv
 
 *** =sct
 ```{r}
+test_object("Omega", undefined_msg = NULL, incorrect_msg = "`Onmega` defineerimisel kasuta näiteks `100:999`")
+test_object("B1", undefined_msg = NULL, incorrect_msg = "Defineeri `B1` sarnaselt muutujaga `A`! Kasuta `!=` defineerimaks seda, et arv ei jagu 4-ga!")
+test_object("B2", undefined_msg = NULL, incorrect_msg = "Defineeri `B2` analoogiliselt muutujaga `A`! Kasuta `90` `2`-asemel.")
+test_object("B3", undefined_msg = NULL, incorrect_msg = "Defineeri `B3` analoogiliselt muutujaga `A`! Kasuta `91` `2`-asemel.")
 
+test_object("B", undefined_msg = NULL, incorrect_msg = "Kas kasutasid käsu `intersect` ühe argumendina funktsioon `union(B2, B3)`?")
+
+test_object("C2", undefined_msg = NULL, incorrect_msg = "Defineeri `C2` analoogiliselt muutujaga `C1`! Kasuta märki `<=`.")
+test_object("C", undefined_msg = NULL, incorrect_msg = "Kas kasutasid käsku `intersect(C1, C2)`?")
+
+test_object("Arv", undefined_msg = NULL, incorrect_msg = "Kas kasutasid funktsiooni `intersect`, mille üheks argumendiks on samuti funktsioon `intersect`?")
 ```
 
 
