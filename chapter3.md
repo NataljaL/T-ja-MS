@@ -355,7 +355,7 @@ Arvame ära Kristjani mõeldud arvu sündmuste tehteid kasutades!
 * Kristjani 2. väide on sel juhul sündmuste tehete kaudu: $B = B1 \cap (B2\cup B3)$. Defineeri see sündmus R-is, kasutades funktsiooni `union()` ja `intersect()`. 
 * Olgu sündmus `C1`: numbrite summa on suurem kui 11. See sündmus on juba defineeritud. Kirjuta analoogiline käsk sündmuse `C2` jaoks: numbrite summa on väiksem või võrdne 15-ga.
 * Olgu sündmus $C = C1\cap C2$. Defineeri see `R`-is.
-* Kristjani mõeldud arvu saab esitada nüüd kui $Arv = (B1 \cap B2) \cap B3$. Täienda muutuja `Arv` funktsioonidega ning saad Kristjani arvu kätte!
+* Kristjani mõeldud arvu saab esitada nüüd kui $Arv = (A \cap B) \cap C$. Täienda muutuja `Arv` funktsioonidega ning saad Kristjani arvu kätte!
 *** =hint
 
 *** =pre_exercise_code
@@ -458,6 +458,8 @@ test_object("C2", undefined_msg = NULL, incorrect_msg = "Defineeri `C2` analoogi
 test_object("C", undefined_msg = NULL, incorrect_msg = "Kas kasutasid käsku `intersect(C1, C2)`?")
 
 test_object("Arv", undefined_msg = NULL, incorrect_msg = "Kas kasutasid funktsiooni `intersect`, mille üheks argumendiks on samuti funktsioon `intersect`?")
+
+success_msg("Suurepärane! R on igal pool abiks!")
 ```
 
 
