@@ -70,7 +70,9 @@ p <- rep(1/6, times=6)              # tõenäosuste vektor
 taring.ruum <- probspace(taring, p) # vastav tõenäosusruum
 
 # Ülesanne. Ühe mündi viskamisele vastav tõenäosusruum
-
+mynt <- ___________      
+p <- ____________
+mynt.ruum <- _______________
 
 ```
 
@@ -91,7 +93,9 @@ mynt.ruum <- probspace(mynt, p)
 
 *** =sct
 ```{r}
-test_object("mynt.ruum", undefined_msg = NULL, incorrect_msg = "Kas muutsid ka tõenäosuste vektori ära?")
+test_object("mynt", undefined_msg = NULL, incorrect_msg = "Mündi viskele vastav sündmuste ruum `mynt` on defineeritud valesti!")
+test_object("p", undefined_msg = NULL, incorrect_msg = "Vektor `p` peab sisaldama kahte võrdset elementi 0.5!")
+test_object("mynt.ruum", undefined_msg = NULL, incorrect_msg = "Viga muutujas `mynt.ruum`!")
 
 success_msg("Väga hea!")
 ```
