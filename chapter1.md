@@ -230,7 +230,7 @@ test_object("tydrukuid", incorrect_msg = "Kontrolli, kas omistad muutujale `tydr
 #                     incorrect_msg = "Konrolli, kas väljastad laste arvu muutuja `lapsi` abil?")
 msg <- "Kas kasutasid omistmiskäsku `lapsi <- poisse + tydrukuid`?"
 test_object("lapsi", undefined_msg = msg, incorrect_msg = msg)
-success_msg("Nice one! The great advantage of doing calculations with variables is reusability. If you just change `my_apples` to equal 12 instead of 5 and rerun the script, `my_fruit` will automatically update as well. Continue to the next exercise.")
+success_msg("Hästi tehtud! Suundu järgmise harjutuse juurde!")
 #test_object("poisse", undefined_msg = "Kontrolli muutujate nimesid, kas Sul defineeritud arvuline muutuja `poisse`?", incorrect_msg = "Kontrolli kas muutuja `poisse`  on arvuline.")
 #test_object("tydrukuid", undefined_msg = "Kontrolli muutujate nimesid, kas Sul defineeritud arvuline muutuja `tydrukuid`?", incorrect_msg = "Kontrolli kas muutuja `tydrukuid`  on arvuline.")
 #test_object( "lapsi", undefined_msg = "Kontrolli muutujate nimesid, kas Sul defineeritud arvuline muutuja `lapsi`?", incorrect_msg = "Vale vastus")
