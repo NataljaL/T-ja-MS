@@ -312,7 +312,7 @@ jada2
 ```{r}
 test_object("jada1", incorrect_msg= "Kas kasutasid `jada1` defineerimiseks käsku `5:1`?")
 test_object("jada2", incorrect_msg= "Kas kasutasid `jada2` esimeseks argumendiks `c("Ruhnu", "Kihnu")` ja teiseks ` times = 3`?")
-success_msg("Super! Kas teadsid, et argumentide nimesid pole vaja funktsiooni sees välja kirjutada kui jälgida nende järjekorda `Help`-is. Näiteks, `jada2 <- rep(c("Ruhnu", "Kihnu"),3)` on samuti õige.")
+success_msg("Super!")
 
 
 
