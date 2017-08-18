@@ -311,10 +311,8 @@ jada2
 *** =sct
 ```{r}
 test_object("jada1", incorrect_msg= "Kas kasutasid `jada1` defineerimiseks käsku `5:1`?")
-test_object("jada2", incorrect_msg= "Kas kasutasid `jada2` esimeseks argumendiks `c("Ruhnu", "Kihnu")` ja teiseks ` times = 3`?")
+test_object("jada2", undefined_msg = NULL, incorrect_msg = "Kontrolli kas muutuja `Omega1` väärtused on samad kui ülesandes antud ja nõutud järjekorras!")
 success_msg("Super!")
-
-
 
 ```
 
