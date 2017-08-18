@@ -219,7 +219,8 @@ P.B
 *** =sct
 ```{r}
 test_object("B", undefined_msg = NULL, incorrect_msg = "Valesti defineeritud sündmus `B`! Kasuta funktsiooni `subset` ja tingimust `X1 == X2`!")
-test_object("P.B", undefined_msg = NULL, incorrect_msg = "Viga tõenäosuse leidmisel! Kas kasutasid `Prob(B)`?")
+test_student_typed("P.B <- Prob(B)", not_typed_msg =  "Viga tõenäosuse leidmisel! Kas kasutasid `Prob(B)`?")
+#test_object("P.B", undefined_msg = NULL, incorrect_msg = "Viga tõenäosuse leidmisel! Kas kasutasid `Prob(B)`?")
 
 success_msg("Suurepärane! Suundu järgmise harjutuse juurde!")
 ```
