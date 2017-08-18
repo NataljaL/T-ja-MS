@@ -311,7 +311,7 @@ jada2
 *** =sct
 ```{r}
 test_object("jada1", incorrect_msg= "Kas kasutasid `jada1` defineerimiseks käsku `5:1`?")
-#test_function("jada2", args=c("rep", "times"), args_not_specified_msg=c("Viga esimeses argumendis (funktsioonis `rep`)!", "Viga teises argumendis (funktsioonis `rep`)!"))
+test_function("rep", args=c("rep", "times"), args_not_specified_msg=c("Viga esimeses argumendis (funktsioonis `rep`)!", "Viga teises argumendis (funktsioonis `rep`)!"))
 
 #ex() %>% check_operator(":") %>% check_result(msg = "Viga, kasutatud pole :") %>% check_equal()
 #test_function("rep", args = c("x", "times"))
