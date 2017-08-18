@@ -227,16 +227,11 @@ lapsi <- poisse + tydrukuid
 ```{r}
 test_object("poisse", incorrect_msg = "Kontrolli, kas omistad muutujale `poisse` arvu 3.")
 test_object("tydrukuid", incorrect_msg = "Kontrolli, kas omistad muutujale `tydrukuid` arvu 2.")
-#test_output_contains("poisse + tydrukuid",
-#                     incorrect_msg = "Konrolli, kas väljastad laste arvu muutuja `lapsi` abil?")
+
 msg <- "Kas kasutasid omistmiskäsku `lapsi <- poisse + tydrukuid`?"
 test_object("lapsi", undefined_msg = msg, incorrect_msg = msg)
 success_msg("Hästi tehtud! Suundu järgmise harjutuse juurde!")
-#test_object("poisse", undefined_msg = "Kontrolli muutujate nimesid, kas Sul defineeritud arvuline muutuja `poisse`?", incorrect_msg = "Kontrolli kas muutuja `poisse`  on arvuline.")
-#test_object("tydrukuid", undefined_msg = "Kontrolli muutujate nimesid, kas Sul defineeritud arvuline muutuja `tydrukuid`?", incorrect_msg = "Kontrolli kas muutuja `tydrukuid`  on arvuline.")
-#test_object( "lapsi", undefined_msg = "Kontrolli muutujate nimesid, kas Sul defineeritud arvuline muutuja `lapsi`?", incorrect_msg = "Vale vastus")
-#test_output_contains("lapsi", incorrect_msg = "Vale vastus. Proovi uuesti!")
-#success_msg("Hästi tehtud!")
+
 ```
 
 
@@ -315,8 +310,12 @@ jada2
 
 *** =sct
 ```{r}
-ex() %>% check_operator(":") %>% check_result(msg = "Viga, kasutatud pole :") %>% check_equal()
-test_function("rep", args = c("x", "times"))
+test_object("jada1", eval=FALSE, incorrect_msg="Kas kasutasid ´jada1´ defineerimiseks käsku `5:1`?")
+test_function("jada2", args=c("rep", "times"), args_not_specified_msg=c("Viga esimeses argumendis (funktsioonis `rep`)!", "Viga teises argumendis (funktsioonis `rep`)!"))
+test_error()
+
+#ex() %>% check_operator(":") %>% check_result(msg = "Viga, kasutatud pole :") %>% check_equal()
+#test_function("rep", args = c("x", "times"))
 success_msg("Tubli!")
 #test_student_typed("jada1 <- 5:1", fixed = TRUE, "Viga")
 
