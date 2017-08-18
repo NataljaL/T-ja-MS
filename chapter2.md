@@ -312,7 +312,7 @@ test_function("urnsamples",
               eq_condition = "equivalent",
               not_called_msg = c("Nõutud funktsiooni pole kasutatud!", "2", "3", "4"),
               args_not_specified_msg = c("Mõni nõutud argument on puudu.", "vale2", "vale3", "vale4"),
-              incorrect_msg = c("viga1", "Viga argumendis `size`!", "viga3", "viga4"))
+              incorrect_msg = c("Viga esimeses argumendis!", "Viga argumendis `size`!", "viga3", "viga4"))
               
               
 #test_output_contains(tulemus, incorrect_msg = "Jälle mingi viga, tulemus pole sama")
