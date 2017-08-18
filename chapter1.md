@@ -155,7 +155,8 @@ z
 *** =sct
 ```{r}
 test_object(c("w", "z"), undefined_msg = "Kontrolli muutujate nimesid, kas Sul on defineeritud muutujad `w` ja `z`?", incorrect_msg = "Kontrolli mõlema muutuja väärtust!")
-test_output_contains("z", incorrect_msg = "Kas kirjutasid viimasele reale `z`? Lõplik vastus peab võrduma 8-ga. Proovi veel.")
+test_student_typed("z <- w + 5", not_typed_msg = "Kas kirjutasid `z <- w + 5`?")
+test_output_contains("z", incorrect_msg = "Kas kirjutasid viimasele reale `z`? ")
 success_msg("Hästi tehtud!")
 ```
 
