@@ -304,18 +304,8 @@ tulemus <- urnsamples(urn1, size = 3, replace = FALSE, ordered = TRUE)
 
 *** =sct
 ```{r}
-#test_object("tulemus",  incorrect_msg = "Kas kasutasud funktsiooni `urnsamples` argumentidega `replace = FALSE` ja `ordered = TRUE`?")
-
-test_function("urnsamples",
-              args = c("x", "size", "replace", "ordered"), index = 5,
-              eval = TRUE,
-              eq_condition = "equivalent",
-              not_called_msg = c("Nõutud funktsiooni pole kasutatud!", "2", "3", "4"),
-              args_not_specified_msg = c("Mõni nõutud argument on puudu.", "vale2", "vale3", "vale4"),
-              incorrect_msg = c("Viga esimeses argumendis!", "Viga argumendis `size`!", "viga3", "viga4"))
-              
-              
-#test_output_contains(tulemus, incorrect_msg = "Jälle mingi viga, tulemus pole sama")
+test_object("urn1",  incorrect_msg = "Kas kasutasud `letters[1:5]` muutuja `urn1` defineerimiseks?")
+test_object("tulemus",  incorrect_msg = "Viga muutujas `tulemus`. Proovi veel!")
 
 success_msg("Tubli! Võta kommi!")
 
