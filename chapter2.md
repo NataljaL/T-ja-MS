@@ -24,7 +24,9 @@ Pakett `prob` on juba lisatud ja kasutuseks valmis!
 3. Defineeri ülesandes 3 elementaarsündmuste hulk `Omega3`, mis vastab kahe täringu visketulemustele, millel mõlemal on vaid 4 tahku.
 
 *** =hint
-
+* Ülesandes 1 kasuta funktsiooni `c()` nii nagu on see tehtud näites.
+* Ülesandes 2 kasuta argumendiga arvu `3`.
+* Ülesandes 3 kasuta funktsiooni `rolldie()` esimese argumendiga `k = 2` ja teisega `nsides = 4`.
 
 *** =pre_exercise_code
 ```{r}
@@ -106,7 +108,7 @@ test_object("Omega1", undefined_msg = NULL, incorrect_msg = "Kontrolli kas muutu
 test_object("Omega2", undefined_msg = NULL, incorrect_msg = "Kas kasutasid funktsiooni `tosscoin` ja panid argumendiks `3`?")
 test_object("Omega3", undefined_msg = NULL, incorrect_msg = "Kas kasutasid funktsiooni `rolldie` täringute arvuga `2` ja argumendi `nsides` väärtusega `4`?")
 
-success_msg("Hästi tehtud!")
+success_msg("Hästi tehtud! Suundu järgmise harjutuse juurde!")
 ```
 
 
