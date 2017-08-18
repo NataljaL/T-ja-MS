@@ -238,9 +238,10 @@ Uuri näidet ja tee ülesanded läbi!
 *** =instructions
 * Esmalt tuleb defineerida elementaarsündmuste hulk koos tõenäosustega, mis vastab kahe mündi-sendi võtmisele tagasipanekuta 25-st mündist-sendist. Sellele vastab muutuja `Omega`. Antud ülesanne on lahendatud eristades kõike münte ja sente (ka sama väärtusega), ehk järjestustega.
 * Leiame tõenäsosuse, et saadud müntide-sentide summa on vähemalt 2,60. 
-* ÜLESANNE. Eelmises ülesandes leida tõenäosus, et juhuslikult võetud kaks münti-senti on sama väärtusega.
+* **Ülesanne.** Eelmises ülesandes leida tõenäosus, et juhuslikult võetud kaks münti-senti on sama väärtusega.
 
 *** =hint
+Tuleta meelde, et võrdusmärgi sisestamiseks tingimuse ritta tuleks kasutada topelt võrdusmärki `==`, näiteks `A == B`.
 
 *** =pre_exercise_code
 ```{r}
@@ -296,6 +297,7 @@ Tn
 
 # ÜLESANNE. Samast rahakotist juhuslikult võetud kaks münti on sama väärtusega.
 Tn1 <- 
+Tn1
 ```
 
 *** =solution
@@ -311,11 +313,14 @@ Tn
 
 # ÜLESANNE. Samast rahakotist juhuslikult võetud kaks münti on sama väärtusega.
 Tn1 <- Prob(Omega, X1 == X2)
+Tn1
 ```
 
 *** =sct
 ```{r}
+test_object("Tn1", undefined_msg = NULL, incorrect_msg = "Muutuja `Tn1` on defineeritud valesti. Proovi veel!")
 
+success_msg("Lahe! Oskad nii hästi `R`-i!")
 ```
 
 
