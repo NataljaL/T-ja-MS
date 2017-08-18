@@ -122,7 +122,7 @@ Funktsioon `expand.grid()` võimaldab luua kõikvõimalikest kombinatsioonidest 
 *** =instructions
 
 - Proovi läbi näited 1 ja 2.
-- Ülesanne: olgu antud kaardipakk järgmiste väärtustega:
+- **Ülesanne**: olgu antud kaardipakk järgmiste väärtustega:
 `"A", 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"` ja mastidega
 `"poti", "ärtu", "risti", "ruutu"`
 Moodustada nendest vektoritest kõikvõimalikud kombinatsioonid. NB! Kasuta esimese argumendina väärtuseid ja teisena masti.
@@ -205,7 +205,7 @@ Erinevaid valikuid saab teostada funktsiooni `urnsamples(x, size, replace, order
 *** =instructions
 
 * Proovi läbi näited 1-4, kus urnist kuulidega 1, 2 ja 3 võetakse 2 kuuli.
-* Ülesanne: koosnegu urn viiest kuulist tähtedega `"a"` kuni `"e"` (funktsioon `letters[]` on abiks!), muutuja nimeks olgu `urn1`. Urnist võetakse 3 kuuli tagasipanekuta, kusjuures võtmise järjekord on oluline. Millised on võimalikud katsetulemused? Omista need muutujale `tulemus`.
+* **Ülesanne**: koosnegu urn viiest kuulist tähtedega `"a"` kuni `"e"` (funktsioon `letters[]` on abiks!), muutuja nimeks olgu `urn1`. Urnist võetakse 3 kuuli tagasipanekuta, kusjuures võtmise järjekord on oluline. Millised on võimalikud katsetulemused? Omista need muutujale `tulemus`.
 
 *** =hint
 * Funktsioon `letters` deineerib vektorina tähestikku, millest tuleks võtta 5 esimest tähte käsuga `1:5`.

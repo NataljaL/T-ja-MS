@@ -31,7 +31,7 @@ With this knowledge, follow the instructions below to complete the exercise.-->
 
 - Tee läbi Näited 1 kuni 4, ühe rea täitmiseks R script-is vajuta `Ctrl + Enter`.
 - Pane tähele, et sümbol  `#` on kasutatud kommenteeritud ridade eristamiseks.
-- Kirjuta Ülesandesse tehe, mis leiaks $$(0.5 \cdot 6) ^3 - 4 $$ ja vajuta 'Submit Answer'.
+- Kirjuta **Ülesandesse** tehe, mis leiaks $$(0.5 \cdot 6) ^3 - 4 $$ ja vajuta 'Submit Answer'.
 
 <br>
 
@@ -108,7 +108,7 @@ Ka kalkulaatorit kasutades tekib peatselt vajadus meeles pidada arvutuste tulemu
 *** =instructions
 
 - Proovi läbi näited 1 ja 2.
-- Ülesanne: Loo muutuja `w` väärtusega 3 ning  omista muutujale `z` summa, mille liidetavad on `w` ja 5. Väljasta `z` väärtus ekraanile.
+- **Ülesanne:** Loo muutuja `w` väärtusega 3 ning  omista muutujale `z` summa, mille liidetavad on `w` ja 5. Väljasta `z` väärtus ekraanile.
 
 
 *** =hint
@@ -173,7 +173,7 @@ Tekstiväärtustega arvutustehteid teha ei saa, küll aga saab tekste omavahel �
 *** =instructions
 - Proovi läbi näited 1 ja 2.
 - Täida ka näite 3 käsud ja vaata, millise veateate annab R. Kas saad aru milles on viga?
-- Ülesanne: paranda näite 3 koodi nii, et liitmisel tuleks vastuseks arv ning punast veateadet ei ilmuks.
+- **Ülesanne:** paranda näite 3 koodi nii, et liitmisel tuleks vastuseks arv ning punast veateadet ei ilmuks.
 
 
 *** =hint
@@ -251,8 +251,8 @@ success_msg("Hästi tehtud! Suundu järgmise harjutuse juurde!")
 
 *** =instructions
 - Tee läbi näited 1 kuni 3.
-- Ülesanne 1. Kasutades operaatorit `:` moodusta vektor nimega `jada1`, mille elemendid on `5, 4, 3, 2, 1`. Väljasta tulemus ekraanile.
-- Ülesanne 2. Kasutades funkstiooni `rep` moodusta vektor nimega `jada2`, mille elemendid on `"Ruhnu", "Kihnu", "Ruhnu", "Kihnu", "Ruhnu", "Kihnu"`. Väljasta tulemus ekraanile.
+- **Ülesanne 1.** Kasutades operaatorit `:` moodusta vektor nimega `jada1`, mille elemendid on `5, 4, 3, 2, 1`. Väljasta tulemus ekraanile.
+- **Ülesanne 2.** Kasutades funkstiooni `rep` moodusta vektor nimega `jada2`, mille elemendid on `"Ruhnu", "Kihnu", "Ruhnu", "Kihnu", "Ruhnu", "Kihnu"`. Väljasta tulemus ekraanile.
 
 
 *** =hint
@@ -326,7 +326,7 @@ Väga sageli on tarvis vektorist kätte saada meile hetkel vajalikku alamosa. Va
 
 *** =instructions
  - Tee  näited 1 kuni 3  ükshaaval läbi ja uuri tulemust.
- - Ülesanne: vali välja jaamad, kus temperatuur on olnud -17 või alla selle. Kasuta tingimuse kirjapanekul märki $\leq$.
+ - **Ülesanne:** vali välja jaamad, kus temperatuur on olnud -17 või alla selle. Kasuta tingimuse kirjapanekul märki $\leq$.
 
 *** =hint
 - Märgi $\leq$ moodustamiseks kombineeri `<` ja `=` märke:  `<=`.
