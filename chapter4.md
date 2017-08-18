@@ -122,6 +122,7 @@ Teame, et elementaarsündmuste ruum koosneb paaridest $\Omega=\{(1,1), (1,2),...
 * ÜLESANNE. Defineeri sündmus $B$, mis vastab võrdsele silmade arvule mõlemal täringul ning leia selle tõenäosus funktsiooni `Prob()` abil.
 
 *** =hint
+Võrdne arv silmi mõlemal täringul on `R`-is tingimus `X1 == X2`. Ülejäänud on analoogiline näitega.
 
 *** =pre_exercise_code
 ```{r}
@@ -217,6 +218,9 @@ P.B
 
 *** =sct
 ```{r}
+test_object("B", undefined_msg = NULL, incorrect_msg = "Valesti defineeritud sündmus `B`! Kasuta funktsiooni `subset` ja tingimust `X1 == X2`!")
+test_object("P.B", undefined_msg = NULL, incorrect_msg = "Viga tõenäosuse leidmisel! Kas kasutasid `Prob(B)`?")
 
+success_msg("Suurepärane! Suundu järgmise harjutuse juurde!")
 ```
 
