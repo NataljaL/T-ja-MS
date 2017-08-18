@@ -316,9 +316,6 @@ success_msg("Super!")
 
 ```
 
-
-
-
 --- type:NormalExercise lang:r xp:100 skills:1 key:7d4f13d4f0
 ## Vektorid 2
 
@@ -382,10 +379,8 @@ vastus
 
 *** =sct
 ```{r}
-ex() %>% check_operator("<=") %>% check_result(msg = "Viga, kasutatud pole <=") %>% check_equal()
-success_msg("Tubli töö!")
-#test_student_typed("jada1 <- 5:1", fixed = TRUE, "Viga")
-
+test_object("vastus", undefined_msg = NULL, incorrect_msg = "Kas kasutasid käsku `jaam[temp <= -17]`?")
+success_msg("Tubli töö! Jätka samas vaimus!")
 ```
 
 
@@ -403,7 +398,6 @@ Muutja `k` väärtuseks on `"kuusteist"` ja muutuja `m` väärtuseks on `4`. Mil
 - tuleb veateade `Error: non-numeric argument to binary operator`
 
 *** =hint
-
 Vaata veelkord harjutust **Muutujad 2**.
 
 *** =pre_exercise_code
@@ -439,7 +433,6 @@ Millised vektori `tulemus` elemendid jaguvad 5-ga täpselt?
 - 3. ja 6. element
 
 *** =hint
-
 Vaata veelkord harjutusi **R kui kalkulaator** (jäägi leidmine) ja **Muutujad 2** (vektorite moodustamine).
 
 *** =pre_exercise_code
