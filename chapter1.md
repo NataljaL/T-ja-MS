@@ -311,12 +311,9 @@ jada2
 *** =sct
 ```{r}
 test_object("jada1", incorrect_msg= "Kas kasutasid `jada1` defineerimiseks käsku `5:1`?")
-test_function("rep", args=c("rep", "times"), args_not_specified_msg=c("Viga esimeses argumendis (funktsioonis `rep`)!", "Viga teises argumendis (funktsioonis `rep`)!"))
+test_object("jada2", incorrect_msg= "Kas kasutasid `jada2` esimeseks argumendiks `c("Ruhnu", "Kihnu")` ja teiseks ` times = 3`?")
+success_msg("Super! Kas teadsid, et argumentide nimesid pole vaja funktsiooni sees välja kirjutada kui jälgida nende järjekorda ´Help´-is. Näiteks, `jada2 <- rep(c("Ruhnu", "Kihnu"),3)` on samuti õige.")
 
-#ex() %>% check_operator(":") %>% check_result(msg = "Viga, kasutatud pole :") %>% check_equal()
-#test_function("rep", args = c("x", "times"))
-success_msg("Tubli!")
-#test_student_typed("jada1 <- 5:1", fixed = TRUE, "Viga")
 
 
 ```
