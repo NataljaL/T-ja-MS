@@ -25,7 +25,7 @@ Pakett `prob` on juba lisatud ja kasutuseks valmis!
 
 *** =hint
 * Ülesandes 1 kasuta funktsiooni `c()` nii nagu on see tehtud näites.
-* Ülesandes 2 kasuta argumendiga arvu `3`.
+* Ülesandes 2 kasuta argumendina arvu `3`.
 * Ülesandes 3 kasuta funktsiooni `rolldie()` esimese argumendiga `k = 2` ja teisega `nsides = 4`.
 
 *** =pre_exercise_code
@@ -187,8 +187,6 @@ test_object("mastid",  incorrect_msg = "Kas sisestatud väärtused ja nende jär
 
 test_student_typed("tulemused3 <- expand.grid(vaartused, mastid)", not_typed_msg =  "Kas kasutasid õiget funktsiooni? Kas argumendid on õiges järjekorras?")
 
-#test_object("tulemused3",  incorrect_msg = "Kas argumendid on sisestatud õiges järjekorras?")
-#ex() %>% check_operator(":") %>% check_result(msg = "Viga, kasutatud pole :") %>% check_equal()
 success_msg("Tubli! Võta kommi!")
 ```
 
@@ -207,9 +205,11 @@ Erinevaid valikuid saab teostada funktsiooni `urnsamples(x, size, replace, order
 *** =instructions
 
 * Proovi läbi näited 1-4, kus urnist kuulidega 1, 2 ja 3 võetakse 2 kuuli.
-* Ülesanne: koosnegu urn viiest kuulist tähtedega `"a"` kuni `"e"` (funktsioon `letters[]` on abiks!). Urnist võetakse 3 kuuli tagasipanekuta, kusjuures võtmise järjekord on oluline. Millised on võimalikud katsetulemused? Omista need muutujale `tulemus`.
+* Ülesanne: koosnegu urn viiest kuulist tähtedega `"a"` kuni `"e"` (funktsioon `letters[]` on abiks!), muutuja nimeks olgu `urn1`. Urnist võetakse 3 kuuli tagasipanekuta, kusjuures võtmise järjekord on oluline. Millised on võimalikud katsetulemused? Omista need muutujale `tulemus`.
 
 *** =hint
+* Funktsioon `letters` deineerib vektorina tähestikku, millest tuleks võtta 5 esimest tähte käsuga `1:5`.
+
 
 *** =pre_exercise_code
 ```{r}
@@ -273,8 +273,8 @@ d <- urnsamples(urn, size = 2, replace = TRUE, ordered = TRUE)
 d
 
 #Ülesanne. Kolm kuuli viiest tagasipanekuta, järjestus on oluline.
-
-
+urn1 <- ________________________
+tulemus <- ___________________________
 ```
 
 *** =solution
