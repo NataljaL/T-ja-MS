@@ -45,10 +45,6 @@ Kui tekib küsimus mõne R funktsiooni või märgi kohta, näiteks jäägi kohta
 * Kümnendemurru sisestamiseks kasuta punkti: `0.5`. 
  
 
-
-
-
-
 *** =pre_exercise_code
 ```{r}
 #polegi
@@ -116,6 +112,10 @@ Ka kalkulaatorit kasutades tekib peatselt vajadus meeles pidada arvutuste tulemu
 
 
 *** =hint
+
+* Omistamiseks kasuta märki `<-`.
+* Kasuta tehet `w + 5`.
+* Väärtuse ekraanile väljastamiseks kirjuta lihtsalt selle muutuja nime `z`.
 
 *** =pre_exercise_code
 ```{r}
