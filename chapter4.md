@@ -462,6 +462,8 @@ Lahendame ka `R`- i abil.
 * Tõenäosust $P(A|B)$ saab leida ka teisiti. Vastav käsk on juba olemas. Kirjuta analoogiline käsk ka sündmuse $B|A$ tõenäosuse leidmiseks. Kas vastused langevad eespool leituga?
  
 *** =hint
+* Kasuta tingimust `X1 + X2 >= 8` sündmuse `B` defineerimisel.
+* Tingliku tõenäosuse leidmisel valemi järgi lugejaks on `Prob(intersect(A,B))`.
 
 *** =pre_exercise_code
 ```{r}
