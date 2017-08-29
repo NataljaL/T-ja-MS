@@ -421,6 +421,10 @@ A.yhend.B.tn <- A.tn + B.tn - AB.tn
 # Alternatiivne viis vastuse saamiseks:
 Prob(union(A, B))
 
+#Ülesanne:
+C <- subset(kaardid.ruum, mastid %in% c("risti", "poti"))
+D <- subset(kaardid.ruum, vaartused %in% c(7,8,9))
+yl.tn <- Prob(union(C,D))
 
 ```
 
