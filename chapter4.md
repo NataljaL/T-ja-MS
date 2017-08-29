@@ -318,7 +318,7 @@ Tn1
 
 *** =sct
 ```{r}
-test_object("Tn1", undefined_msg = NULL, incorrect_msg = "Muutuja `Tn1` on defineeritud valesti. Proovi veel!")
+test_object("Tn1", undefined_msg = NULL, incorrect_msg = "Muutuja Tn1 on defineeritud valesti. Proovi veel!")
 
 success_msg("Lahe! Oskad nii hästi `R`-i!")
 ```
