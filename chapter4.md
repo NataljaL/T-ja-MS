@@ -343,7 +343,7 @@ Kaardipakist, kus on 52 kaarti mastidega ärtu, ruutu, risti ja poti tõmmatakse
 * ÜLESANNE: leida eelmises ülesandes, et tõmmatud kaart on kas musta masti või numbriga 7, 8 või 9. Lõplikku vastust omista muutujale `yl.tn`.
 
 *** =hint
-Ülesande lahendamiseks defineeri esmalt uued vajalikud sündmused ning seejärel kasuta ühte kahest pakutud variantidest (valem või funktsioon).
+Ülesande lahendamiseks defineeri esmalt uued vajalikud sündmused ning seejärel kasuta näiteks funktsiooni `Prob(union(___ ,____))`.
 
 *** =pre_exercise_code
 ```{r}
