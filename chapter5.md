@@ -11,7 +11,7 @@ Juhuslik suurus $X$ on defineeritud kui funktsioon  $X:\Omega \to R$, mis seab i
 
 Paketis `prob` on olemas funktsioon `addrv()` (ingl. lühendatud *Add Random Variable*), mille abil on lihtne luua juhuslikku suurust olemasoleva tõenäosusruumi baasil. See aga omakorda tähendab, et eelnevalt peab looma nii elementaarsündmuste hulga $\Omega$ koos vastavate tõenäosustega. Uuri, kuidas on see tehtud järgneva näite abil.
 
-**Näide.** Veeretatakse kolme neljatahulist täringut korraga ning juhuslikuks suuruseks $U$ on *veeretamisel saadud silmade arvude summa* ja $V$ on *saadud maksmimaalne tulemus*. Vaatame, kuidas saab teostada `R`-is.
+**Näide.** Veeretatakse kolme neljatahulist täringut korraga ning juhuslikuks suuruseks $U$ on *veeretamisel saadud silmade arvude summa* ja $V$ on *saadud maksmimaalne tulemus*. Vaatame, kuidas saab neid defineerida `R`-is.
 
 *** =instructions
 * Täienda käsk, mis loob tõenäosusruumi kolme täringu veeretamiseks.
