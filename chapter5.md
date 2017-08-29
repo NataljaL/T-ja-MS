@@ -8,7 +8,7 @@ description : Insert the chapter description here
 
 Juhuslik suurus $X$ on defineeritud kui funktsioon  $X:\Omega \to R$, mis seab igale elementaarsündmusele $w \in \Omega$ vastavusse täpselt ühe väärtuse $X(\omega)=x$ reaalarvude hulgast $R$. Näiteks, viskame münti 2 korda ja juhuslikuks suuruseks on *saadud vappide arv*. Sel juhul sisaldab $\Omega$ paare $(v,k), (k,v), (v,v), (k,k)$ ja juhuslik suurus $X$ võib saada väärtuseks 0, 1 või 2.
 
-Paketis `prob` on olemas funktsioon `addrv()` (ingl. lühendatud *Add Random Variable*), mille abil on lihtne luua juhuslik suurus olemasoleva tõenäosusruumi baasil. St eelnevalt peab looma nii elementaarsündmuste hulga $\Omega$ kui ka vastavad tõenäosused. Uuri, millised on selle võimalused järgneva näite abil.
+Paketis `prob` on olemas funktsioon `addrv()` (ingl. lühendatud *Add Random Variable*), mille abil on lihtne luua juhuslikku suurust olemasoleva tõenäosusruumi baasil. St eelnevalt peab looma nii elementaarsündmuste hulga $\Omega$ kui ka vastavad tõenäosused. Uuri, millised on selle võimalused järgneva näite abil.
 
 **Näide.** Veeretatakse kolme neljatahulist täringut korraga ning juhuslikuks suuruseks $U$ on *veeretamisel saadud silmade arvude summa* ja $V$ on *saadud maksmimaalne tulemus*. Vaatame, kuidas saab teostada `R`-is.
 
