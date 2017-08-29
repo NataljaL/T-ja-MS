@@ -340,7 +340,7 @@ Kaardipakist, kus on 52 kaarti mastidega ärtu, ruutu, risti ja poti tõmmatakse
 * Leia sündmuste `A` ja `B` tõenäosused eraldi. Ning ka nende koostoimumise tõenäosus.
 * Vastus on leitud muutujas `A.yhend.B.tn`.
 * Analoogilise vastuse saab ka teisiti. Uuri!
-* ÜLESANNE: leida eelmises ülesandes, et tõmmatud kaart on kas musta masti või numbriga 7, 8 või 9. Vastust omista muutujale `yl.tn`.
+* ÜLESANNE: leida eelmises ülesandes, et tõmmatud kaart on kas musta masti või numbriga 7, 8 või 9. Lõplikku vastust omista muutujale `yl.tn`.
 *** =hint
 
 *** =pre_exercise_code
@@ -403,6 +403,10 @@ A.yhend.B.tn <- A.tn + B.tn - AB.tn
 
 # Alternatiivne viis vastuse saamiseks:
 Prob(union(A, B))
+
+#Ülesanne:
+
+yl.tn <- ___________________
 ```
 
 *** =solution
@@ -417,12 +421,13 @@ A.yhend.B.tn <- A.tn + B.tn - AB.tn
 # Alternatiivne viis vastuse saamiseks:
 Prob(union(A, B))
 
-# KUIDAGI VÄLJA MÕELDA VIIS ÜLESANDE KONTROLLIMISEKS. VÕIB OLLA LIHTSALT VÕRRELDA SAADUD VASTUST ÕIGE VASTUSEGA.
+
 ```
 
 *** =sct
 ```{r}
-
+test_object("Tn1", undefined_msg = NULL, incorrect_msg = "Muutuja Tn1 on defineeritud valesti. Proovi veel!")
+success_msg("Lahe! Oskad nii hästi `R`-i!")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:3c0bf3ee30
