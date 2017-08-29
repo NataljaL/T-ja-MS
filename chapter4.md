@@ -569,7 +569,8 @@ Prob(B, given = A) #ISE!
 *** =sct
 ```{r}
 test_object("B", undefined_msg = NULL, incorrect_msg = "Kontrolli, kas defineerisid sündmuse `B` õigesti!")
-test_output_contains("Prob(intersect(A,B))/Prob(B)", incorrect_msg = "Kas kasutasid funktsiooni `intersect(A, B)` tingliku tõenäosuse valemis lugeja leidmiseks?")
+test_student_typed("Prob(intersect(A,B))/Prob(B)", not_typed_msg = "Kas kirjutasid `intersect(A,B)`?")
+#test_output_contains("Prob(intersect(A,B))/Prob(B)", incorrect_msg = "Kas kasutasid funktsiooni `intersect(A, B)` tingliku tõenäosuse valemis lugeja leidmiseks?")
 test_output_contains("Prob(B, given = A)", incorrect_msg = "Viga. Kas defineerisid sündmuse `B` õigesti?")
 ```
 
