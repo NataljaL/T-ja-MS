@@ -341,7 +341,9 @@ Kaardipakist, kus on 52 kaarti mastidega ärtu, ruutu, risti ja poti tõmmatakse
 * Vastus on leitud muutujas `A.yhend.B.tn`.
 * Analoogilise vastuse saab ka teisiti. Uuri!
 * ÜLESANNE: leida eelmises ülesandes, et tõmmatud kaart on kas musta masti või numbriga 7, 8 või 9. Lõplikku vastust omista muutujale `yl.tn`.
+
 *** =hint
+Ülesande lahendamiseks defineeri esmalt uued vajalikud sündmused ning seejärel kasuta ühte kahest pakutud variantidest (valem või funktsioon).
 
 *** =pre_exercise_code
 ```{r}
@@ -430,8 +432,8 @@ yl.tn <- Prob(union(C,D))
 
 *** =sct
 ```{r}
-test_object("Tn1", undefined_msg = NULL, incorrect_msg = "Muutuja Tn1 on defineeritud valesti. Proovi veel!")
-success_msg("Lahe! Oskad nii hästi `R`-i!")
+test_object("yl.tn", undefined_msg = NULL, incorrect_msg = "Vatus pole õige. Proovi veelkord!")
+success_msg("Suurepärane! Kasuta `R`-i ka edaspidi oma töös :) ")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:3c0bf3ee30
