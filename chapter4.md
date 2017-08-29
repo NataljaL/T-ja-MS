@@ -566,6 +566,7 @@ Prob(B, given = A) #ISE!
 
 *** =sct
 ```{r}
-
+test_output_contains("B <- subset(Omega, X1+X2 >= 8)", incorrect_msg = "Vale vastus. Kontrolli, kas defineerisid sündmuse `B` õigesti!")
+test_output_contains("Prob(B, given = A)", incorrect_msg = "Viga. Kas defineerisid sündmuse `B` õigesti?")
 ```
 
