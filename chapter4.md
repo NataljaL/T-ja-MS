@@ -572,6 +572,6 @@ test_object("B", undefined_msg = NULL, incorrect_msg = "Kontrolli, kas defineeri
 test_student_typed("Prob(intersect(A,B))/Prob(B)", not_typed_msg = "Kas kirjutasid `intersect(A,B)` valemi järgi tingliku tõenäosuse leidmiseks?")
 #test_output_contains("Prob(intersect(A,B))/Prob(B)", incorrect_msg = "Kas kasutasid funktsiooni `intersect(A, B)` tingliku tõenäosuse valemis lugeja leidmiseks?")
 test_student_typed("Prob(B, given = A)", not_typed_msg = "Kas kirjutasid `given = A` tingliku tõenäosuse tingimuse määramiseks?")
-test_output_contains("Prob(B, given = A)", incorrect_msg = "Viga. Kas defineerisid sündmuse `B` õigesti?")
+#test_output_contains("Prob(B, given = A)", incorrect_msg = "Viga. Kas defineerisid sündmuse `B` õigesti?")
 ```
 
