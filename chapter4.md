@@ -568,7 +568,7 @@ Prob(B, given = A) #ISE!
 
 *** =sct
 ```{r}
-test_output_contains("B <- subset(Omega, X1+X2 >= 8)", incorrect_msg = "Kontrolli, kas defineerisid sündmuse `B` õigesti!")
+test_object("B", undefined_msg = NULL, incorrect_msg = "Kontrolli, kas defineerisid sündmuse `B` õigesti!")
 test_output_contains("Prob(intersect(A,B))/Prob(B)", incorrect_msg = "Kas kasutasid funktsiooni `intersect(A, B)` tingliku tõenäosuse valemis lugeja leidmiseks?")
 test_output_contains("Prob(B, given = A)", incorrect_msg = "Viga. Kas defineerisid sündmuse `B` õigesti?")
 ```
