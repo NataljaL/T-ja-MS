@@ -98,4 +98,104 @@ Omega.ruum <- addrv(Omega.ruum, FUN = max, invars = c("X1", "X2", "X3"), name = 
 
 ```
 
+--- type:NormalExercise lang:r xp:100 skills:1 key:d273281f35
+## Juhuslik suurus (2)
+
+Jätkame eelmise näitega ning leiame juhuslike suuruste $U$ ja $V$ jaotused. Tuletame meelde, et $U$ on *kolme neljatahulise täringu veeretamisel saadud silmade arvude summa* ja $V$ on *saadud maksmimaalne tulemus*. 
+
+*** =instructions
+* Kirjuta aknas `R Console` funktsioon `head(Omega.ruum)` ning uuri, millised on väärtused juhuslikel suurustel $U$ ja $V$.
+* Juhusliku suuruse jaotuse saamiseks peame saama tabeli, mis sisaldab selle juhusliku suuruse kõikvõimalikke väärtuseid (ühe korra) ning vastavaid tõenäosusi. Tabelis `Omega.ruum` on aga praegu mõlemal juhuslikul suurusel korduvaid väärtuseid. 
+* Tabeli agrgeerimiseks saab kasutada funktsiooni `marginal()` paketist `prob`. Vaata, kuidas on see tehtud juhusliku suuruse $U$ jaoks. Kirjuta analoogiline käsk muutuja $V$ jaotustabeli saamiseks.
+* Jaotustabelit saab illustreerida graafiku abil kasutades funktsiooni `plot()`. Sellel funktsioonil on palju omadusi. Tähtsad nendest on `x = ` ehk väärtuste hulk x-telje jaoks, `y = ` väärtuste hulk y-telje jaoks (sama dimensioon, mis x-telje jaoks); `xlab` ja `ylab` on vastavate telgede nimetused ning `h` on diskreetse jaotuse iseloomustamiseks sobilik joonise tüüp. 
+* Kirjuta käsk muutuja $V$ graafiku loomiseks muutuja $U$ näite järgi. Muuda ka joonise värv punaseks. 
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+source_github <- function(user = "cran", package = "prob") {
+  
+  library(httr)
+  package_source <- paste0(user, "/",package, "/")
+  url <- paste0("https://api.github.com/repos","/", package_source, "git/trees/master?recursive=1")
+  req <- GET(url)
+  stop_for_status(req)
+  filelist <- unlist(lapply(content(req)$tree, "[", "path"), use.names = F)
+  R_files <- filelist[grep("R/",filelist)]
+  
+  for(file in R_files) {
+    url <- paste0("https://raw.githubusercontent.com/", package_source, "master/", file)
+    source(url)
+  }
+}
+save(file = "source_github.Rda", source_github)
+
+source_github()
+
+source_github <- function(user = "cran", package = "combinat") {
+  
+  library(httr)
+  package_source <- paste0(user, "/",package, "/")
+  url <- paste0("https://api.github.com/repos","/", package_source, "git/trees/master?recursive=1")
+  req <- GET(url)
+  stop_for_status(req)
+  filelist <- unlist(lapply(content(req)$tree, "[", "path"), use.names = F)
+  R_files <- filelist[grep("R/",filelist)]
+  
+  for(file in R_files) {
+    url <- paste0("https://raw.githubusercontent.com/", package_source, "master/", file)
+    source(url)
+  }
+}
+save(file = "source_github.Rda", source_github)
+
+source_github()
+
+# harjutuse jaoks vajalik:
+Omega.ruum <- rolldie(3, nsides = 4, makespace = TRUE)
+Omega.ruum <- addrv(Omega.ruum, FUN = sum, invars = c("X1", "X2", "X3"), name = "U")
+Omega.ruum <- addrv(Omega.ruum, FUN = max, invars = c("X1", "X2", "X3"), name = "V")
+```
+
+*** =sample_code
+```{r}
+# Muutuja U jaotustabel
+U.jaotus <- marginal(Omega.ruum, vars = "U")
+U.jaotus
+
+# Muutuja V jaotustabel
+V.jaotus <- ________________________________
+V.jaotus
+
+# Muutuja U jaotus graafikul
+plot(x = U.jaotus$U, y = U.jaotus$probs, xlab = "u", ylab = "P(U = u)", type = "h", col = "blue")
+
+# Muutuja V jaotus fraafikul
+________________________________________ # ise!
+```
+
+*** =solution
+```{r}
+# Muutuja U jaotustabel
+U.jaotus <- marginal(Omega.ruum, vars = "U")
+U.jaotus
+
+# Muutuja V jaotustabel
+V.jaotus <- marginal(Omega.ruum, vars = "V")
+V.jaotus
+
+# Muutuja U jaotus graafikul
+plot(x = U.jaotus$U, y = U.jaotus$probs, xlab = "u", ylab = "P(U = u)", type = "h", col = "blue")
+
+# Muutuja V jaotus fraafikul
+plot(x = V.jaotus$V, y = V.jaotus$probs, xlab = "v", ylab = "P(V = v)", type = "h", col = "red") # ise!
+```
+
+*** =sct
+```{r}
+
+```
+
+
 
