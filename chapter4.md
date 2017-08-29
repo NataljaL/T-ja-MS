@@ -573,5 +573,7 @@ test_student_typed("Prob(intersect(A,B))/Prob(B)", not_typed_msg = "Kas kirjutas
 #test_output_contains("Prob(intersect(A,B))/Prob(B)", incorrect_msg = "Kas kasutasid funktsiooni `intersect(A, B)` tingliku tõenäosuse valemis lugeja leidmiseks?")
 test_student_typed("Prob(B, given = A)", not_typed_msg = "Kas kirjutasid `given = A` tingliku tõenäosuse tingimuse määramiseks?")
 #test_output_contains("Prob(B, given = A)", incorrect_msg = "Viga. Kas defineerisid sündmuse `B` õigesti?")
+
+success_msg("Tubli! Tinglik tõenäosus on nüüd ka selge! ")
 ```
 
