@@ -9,7 +9,7 @@ description : Insert the chapter description here
 
 Juhuslik suurus $X$ on defineeritud kui funktsioon  $X:\Omega \to R$, mis seab igale elementaarsündmusele $w \in \Omega$ vastavusse täpselt ühe väärtuse $X(\omega)=x$ reaalarvude hulgast $R$. Näiteks, viskame münti 2 korda ja juhuslikuks suuruseks on *saadud vappide arv*. Sel juhul sisaldab $\Omega$ paare $(v,k), (k,v), (v,v), (k,k)$ ja juhuslik suurus $X$ võib saada väärtuseks 0, 1 või 2.
 
-Paketis `prob` on olemas funktsioon `addrv()` (ingl. lühendatud *Add Random Variable*), mille abil on lihtne luua juhuslikku suurust olemasoleva tõenäosusruumi baasil. See aga omakorda tähendab, et eelnevalt peab looma nii elementaarsündmuste hulga $\Omega$ koos vastavate tõenäosustega. Uuri, kuidas on see tehtud järgneva näite abil.
+Paketis `prob` on olemas funktsioon `addrv()` (ingl. lühendatud *Add Random Variable*), mille abil on lihtne luua juhuslikku suurust olemasoleva tõenäosusruumi baasil. See aga omakorda tähendab, et eelnevalt peab looma elementaarsündmuste hulga $\Omega$ koos vastavate tõenäosustega. Uuri, kuidas on see tehtud järgneva näite abil.
 
 **Näide.** Veeretatakse kolme neljatahulist täringut korraga ning juhuslikuks suuruseks $U$ on *veeretamisel saadud silmade arvude summa* ja $V$ on *saadud maksmimaalne tulemus*. Vaatame, kuidas saab neid defineerida `R`-is.
 
@@ -95,7 +95,8 @@ Omega.ruum <- addrv(Omega.ruum, FUN = max, invars = c("X1", "X2", "X3"), name = 
 
 *** =sct
 ```{r}
-
+test_function("rolldie", args = c("nsides", "makespace"))
+success_msg("Nice job!")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:d273281f35
