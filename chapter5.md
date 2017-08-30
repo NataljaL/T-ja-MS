@@ -5,7 +5,7 @@ description : Insert the chapter description here
 
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:c288cce688
-## Juhuslik suurus (1a)
+## Juhuslik suurus (1)
 
 Juhuslik suurus $X$ on defineeritud kui funktsioon  $X:\Omega \to R$, mis seab igale elementaarsündmusele $w \in \Omega$ vastavusse täpselt ühe väärtuse $X(\omega)=x$ reaalarvude hulgast $R$. Näiteks, viskame münti 2 korda ja juhuslikuks suuruseks on *saadud vappide arv*. Sel juhul sisaldab $\Omega$ paare $(v,k), (k,v), (v,v), (k,k)$ ja juhuslik suurus $X$ võib saada väärtuseks 0, 1 või 2.
 
