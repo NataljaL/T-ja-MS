@@ -118,7 +118,7 @@ Jätkame eelmise näitega ning leiame juhuslike suuruste $U$ ja $V$ jaotused. Tu
 
 *** =hint
 * Muutuja `V` jaotuse saamiseks kasutada sama käsku `marginal`, mis on kasutadtud reas `U.jaotus <- `. Vahetada tuleks vaid argumenti `vars`.
-* Joonist saad käsuga `plot` (vt näidet). Kasuta järgmisi argumente: `x = V.jaotus$V`, `y = V.jaotus$probs`, `xlab = "v"`, `ylab = \"P(V = v)\"`, `type = \"h\"` ja `col = \"red\"`.
+* Joonist saad käsuga `plot` (vt näidet). Kasuta järgmisi argumente: `x = V.jaotus$V`, `y = V.jaotus$probs`, `xlab = "v"`, `ylab = "P(V = v)"`, `type = "h"` ja `col = "red"`.
 
 *** =pre_exercise_code
 ```{r}
