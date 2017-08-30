@@ -97,8 +97,8 @@ Omega.ruum <- addrv(Omega.ruum, FUN = max, invars = c("X1", "X2", "X3"), name = 
 *** =sct
 ```{r}
 test_function("rolldie", args = c("nsides", "makespace"),incorrect_msg=c("Kas määrasid argumendile `nsides` väärtuse 4?", "Kas määrasid argumendile `makespace` loogilise väärtuse `TRUE`?"))
-test_function_result("addrv", index=1)
-test_function_result("addrv",  index=2)
+#test_function_result("addrv", index=1)
+#test_function_result("addrv",  index=2)
 test_function_result("addrv",incorrect_msg=c("Kas määrasid argumendile `spaces` väärtuse `Omega.ruum`?", 
                     "Kas määrasid argumendile `FUN` funktsiooni `max`?", "Kas määrasid argumendile `invars` muutujate vektori elementidega `X1, X2, X3`?"), index=3)
 success_msg("Nice job!")
