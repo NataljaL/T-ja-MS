@@ -100,7 +100,7 @@ test_function("rolldie", args = c("nsides", "makespace"),incorrect_msg=c("Kas m�
 test_function("addrv", index=1, eval=FALSE)
 test_function("addrv", index=2, eval=FALSE)
 test_function("addrv",args=c("space", "FUN", "invars"), incorrect_msg=c("Kas määrasid argumendile `space` väärtuse `Omega.ruum`?", 
-                   "Kas määrasid argumendile `FUN` funktsiooni `max`?", "Kas määrasid argumendile `invars` muutujate vektori elementidega `X1, X2, X3`?"), index=4, , eval=FALSE)
+                   "Kas määrasid argumendile `FUN` funktsiooni `max`?", "Kas määrasid argumendile `invars` muutujate vektori elementidega `X1, X2, X3`?"), index=3, , eval=FALSE)
 success_msg("Nice job!")
 ```
 
