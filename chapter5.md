@@ -97,7 +97,7 @@ Omega.ruum <- addrv(Omega.ruum, FUN = max, invars = c("X1", "X2", "X3"), name = 
 *** =sct
 ```{r}
 test_function("rolldie", args = c("nsides", "makespace"),incorrect_msg=c("Kas määrasid argumendile `nsides` väärtuse 4?", "Kas määrasid argumendile `makespace` loogilise väärtuse `TRUE`?"))
-test_object("Omega.ruum", undefined_msg = NULL, incorrect_msg = "Kas määrasid esimeks argumendiks `Omega.ruum` ja argumendi `FUN` väärtuseks `max`? Argument `invars` peab olema vektor elementidega `X1, X2, X3`!")
+test_object("Omega.ruum", undefined_msg = NULL, incorrect_msg = "Kas määrasid viimases käsus esimeks argumendiks `Omega.ruum` ja argumendi `FUN` väärtuseks `max`? Argument `invars` peab olema vektor elementidega `X1, X2, X3`!")
 
 success_msg("Väga hea tulemus!")
 ```
