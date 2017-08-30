@@ -204,6 +204,12 @@ plot(x = V.jaotus$V, y = V.jaotus$probs, xlab = "v", ylab = "P(V = v)", type = "
 ```{r}
 test_function("marginal", args = "vars")
 test_function("marginal", args = "vars", incorrect_msg="Argument `vars` peab võrduma väärtusega `\"U\"`!", index=2, eval=FALSE)
+
+test_function("plot", args = c("x", "y", "xlab", "ylab", "type", "col"))
+
+test_function("plot", args = c("x", "y", "xlab", "ylab", "type", "col"), incorrect_msg=c("Kas kirjutasid `x = V.jaotus$V`?", "Kas kirjutasid `y = V.jaotus$probs`?",
+"Kas kirjutasid `xlab = \"v\"`?", "Kas kirjutasid `ylab = \"P(V = v)\"`?", "Kas kirjutasid `type = \"h\"`?", "Kas kirjutasid `col = "red"`?"), index=2, eval=FALSE)
+
 test_error()
 success_msg("Lahe! Jätka samas vaimus!")
 ```
