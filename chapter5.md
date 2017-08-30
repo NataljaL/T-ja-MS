@@ -202,7 +202,8 @@ plot(x = V.jaotus$V, y = V.jaotus$probs, xlab = "v", ylab = "P(V = v)", type = "
 
 *** =sct
 ```{r}
-test_function("marginal", args = "vars", incorrect_msg="Argument `vars` peab võrduma väärtusega `\"U\"`!")
+test_function("marginal")
+test_function("marginal", args = "vars", incorrect_msg="Argument `vars` peab võrduma väärtusega `\"U\"`!", index=2)
 
 success_msg("Lahe! Jätka samas vaimus!")
 ```
