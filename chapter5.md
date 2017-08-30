@@ -20,6 +20,8 @@ Paketis `prob` on olemas funktsioon `addrv()` (ingl. lühendatud *Add Random Var
 * Mida saaksime rakendada juhusliku suuruse $V$ loomiseks? Täienda vastav käsk.
 
 *** =hint
+* Funktsiooni `rolldie` kasuta argumetidega `nsides = 4` ja `makespace = TRUE`.
+* Funktsiooni `addrv` viimases reas kasuta argumendiga `Omega.ruum`, funktsiooniga `max` ja  tunnuste vektoriga `c("X1", "X2", "X3")`.
 
 *** =pre_exercise_code
 ```{r}
@@ -110,11 +112,13 @@ Jätkame eelmise näitega ning leiame juhuslike suuruste $U$ ja $V$ jaotused. Tu
 *** =instructions
 * Kirjuta aknas `R Console` funktsioon `head(Omega.ruum)` ning uuri, millised on väärtused juhuslikel suurustel $U$ ja $V$.
 * Juhusliku suuruse jaotuse saamiseks peame saama tabeli, mis sisaldab selle juhusliku suuruse kõikvõimalikke väärtuseid (ühe korra) ning vastavaid tõenäosusi. Tabelis `Omega.ruum` on aga praegu mõlemal juhuslikul suurusel korduvaid väärtuseid. 
-* Tabeli agrgeerimiseks saab kasutada funktsiooni `marginal()` paketist `prob`. Vaata, kuidas on see tehtud juhusliku suuruse $U$ jaoks. Kirjuta analoogiline käsk muutuja $V$ jaotustabeli saamiseks.
-* Jaotustabelit saab illustreerida graafiku abil kasutades funktsiooni `plot()`. Sellel funktsioonil on palju omadusi. Tähtsad nendest on `x = ` ehk väärtuste hulk x-telje jaoks, `y = ` väärtuste hulk y-telje jaoks (sama dimensioon, mis x-telje jaoks); `xlab` ja `ylab` on vastavate telgede nimetused ning `h` on diskreetse jaotuse iseloomustamiseks sobilik joonise tüüp. 
+* Tabeli agregeerimiseks saab kasutada funktsiooni `marginal()` paketist `prob`. Vaata, kuidas on see tehtud juhusliku suuruse $U$ jaoks. Kirjuta analoogiline käsk muutuja $V$ jaotustabeli saamiseks.
+* Jaotustabelit saab illustreerida graafiku abil kasutades funktsiooni `plot()`. Sellel funktsioonil on palju argumente. Tähtsad nendest on `x = ` ehk väärtuste hulk x-telje jaoks, `y = ` väärtuste hulk y-telje jaoks (sama dimensioon, mis x-telje jaoks); `xlab` ja `ylab` on vastavate telgede nimetused ning `h` on diskreetse jaotuse iseloomustamiseks sobilik joonise tüüp. 
 * Kirjuta käsk muutuja $V$ graafiku loomiseks muutuja $U$ näite järgi. Muuda ka joonise värv punaseks. 
 
 *** =hint
+* Muutuja `V` jaotuse saamiseks kasutada sama käsku `marginal`, mis on kasutadtud reas `U.jaotus <- `. Vahetada tuleks vaid argumenti `vars`.
+* Joonist saad käsuga `plot` (vt näidet). Kasuta järgmisi argumente: `x = V.jaotus$V`, `y = V.jaotus$probs`, `xlab = \"v\"`, `ylab = \"P(V = v)\"`, `type = \"h\"` ja `col = \"red\"`.
 
 *** =pre_exercise_code
 ```{r}
